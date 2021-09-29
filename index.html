@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bookself Apps</title>
+  </head>
+
+  <body>
+    <header class="container">
+      <h1 class="logo" style="display: flex; align-items: center; cursor: pointer;"><img
+          src="./assets/icons/books-stack-of-three.png" alt="" width="50px" style="margin-right: 20px;"> Bookshelf App
+      </h1>
+    </header>
+    <section class="landing-image">
+      <h2>keep your book safe for your future</h2>
+
+
+    </section>
+    <section class="container navbar">
+      <nav>
+        <ul>
+          <li class="active">Available</li>
+          <li>Reading</li>
+          <li>Add New Book</li>
+        </ul>
+        <div class="form-search">
+          <input type="text" placeholder="Search Keyword..." class="keyword">
+          <!-- <button class="btn-search">Search</button> -->
+          <img src="./assets/icons/loupe.png" alt="icon search" class="icon-search">
+        </div>
+      </nav>
+    </section>
+
+    <main id="wrapper-bookshelf" class="container">
+      <h2 class="title-bookshelf">LIST OF AVAILABLE BOOK FOR READ</h2>
+      <section class="bookshelf-available show-content"></section>
+
+      <section class="bookshelf-reading"></section>
+
+      <section class="add-book">
+        <form class="form-add-book">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" placeholder="Enter Title..." id="title" required>
+          </div>
+          <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" placeholder="Enter Author Name..." id="author" required>
+          </div>
+          <div class="form-group">
+            <label for="year">Publication Year</label>
+            <input type="number" placeholder="Enter Publication Year..." id="year" required>
+          </div>
+          <div class="form-group mb-5">
+            <label for="cover">Book Cover</label>
+            <input type="file" id="cover" style="padding: 0;">
+          </div>
+          <button type="button" class="btn-save">Save</button>
+          <button type="reset" class="btn-reset">Reset</button>
+        </form>
+      </section>
+
+      <div class="modal"></div>
+    </main>
+
+    <footer class="container">
+      <p>&copy; 2021, All Rights Reserved</p>
+    </footer>
+
+
+    <script src="./js/data.js"></script>
+    <script src="./js/dom.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+
+</html>
